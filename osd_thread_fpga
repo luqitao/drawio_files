@@ -1,13 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2020-10-21T12:12:30.180Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36" etag="kl3hXZAULLG_oJY6p8HI" version="13.6.10" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-22T01:18:00.835Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36" etag="qs-PKZ_xRr5Fi8FXIANf" version="13.8.1" type="github">
   <diagram id="EgzY5IICQfRHdqF8Ct_W" name="Page-1">
-    <mxGraphModel dx="1426" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1426" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="9geRGBK1crUcNc-OIxQ4-1" value="Messenger Thread" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="9geRGBK1crUcNc-OIxQ4-1" value="Messenger Thread" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="130" y="200" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="9geRGBK1crUcNc-OIxQ4-3" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+        <mxCell id="9geRGBK1crUcNc-OIxQ4-3" value="" style="shape=flexArrow;endArrow=classic;html=1;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="40" y="229.5" as="sourcePoint" />
             <mxPoint x="110" y="229.5" as="targetPoint" />
@@ -16,32 +16,38 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="9geRGBK1crUcNc-OIxQ4-5" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=-90;fillColor=#FFFFFF;" vertex="1" parent="1">
-          <mxGeometry x="340" y="180" width="60" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="9geRGBK1crUcNc-OIxQ4-6" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+        <mxCell id="9geRGBK1crUcNc-OIxQ4-6" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="240" y="229.5" as="sourcePoint" />
             <mxPoint x="310" y="229.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9geRGBK1crUcNc-OIxQ4-7" value="enqueue_op()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+        <mxCell id="9geRGBK1crUcNc-OIxQ4-7" value="enqueue_op()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="225" y="200" width="90" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="9geRGBK1crUcNc-OIxQ4-8" value="op_wq(PG)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
-          <mxGeometry x="330" y="270" width="80" height="20" as="geometry" />
+        <mxCell id="9geRGBK1crUcNc-OIxQ4-10" value="&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 9px&quot;&gt;osd_op_tp&lt;/span&gt;(one shard)&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="500" y="190" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="9geRGBK1crUcNc-OIxQ4-9" value="PG Lock" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;fillColor=#FFFFFF;" vertex="1" parent="1">
-          <mxGeometry x="510" y="110" width="90" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="9geRGBK1crUcNc-OIxQ4-10" value="OP_WQ_Thread(PG)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
-          <mxGeometry x="490" y="190" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="9geRGBK1crUcNc-OIxQ4-11" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+        <mxCell id="9geRGBK1crUcNc-OIxQ4-11" value="" style="endArrow=classic;html=1;dashed=1;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="480" y="230" as="sourcePoint" />
-            <mxPoint x="430" y="230" as="targetPoint" />
+            <mxPoint x="490" y="229.5" as="sourcePoint" />
+            <mxPoint x="440" y="229.5" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="KTHzuSE6XWCd6sJx0zWA-1" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=-90;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="340" y="180" width="60" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="KTHzuSE6XWCd6sJx0zWA-4" value="&lt;div style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 9px ; line-height: 14px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;op_shardedwq&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="270" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="KTHzuSE6XWCd6sJx0zWA-8" value="&lt;div style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 9px ; line-height: 14px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;shard_lock&lt;/span&gt;&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="340" y="110" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KTHzuSE6XWCd6sJx0zWA-12" value="&lt;div&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;osd_op_num_shards_hdd = 5&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;osd_op_num_threads_per_shard_hdd = 1&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;osd_op_num_shards_ssd = 8&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;osd_op_num_threads_per_shard_ssd = 2&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="480" y="80" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KTHzuSE6XWCd6sJx0zWA-13" value="&lt;font style=&quot;font-size: 18px&quot;&gt;&lt;span style=&quot;color: rgb(232 , 62 , 140) ; background-color: rgb(255 , 255 , 255)&quot;&gt;总线程数=队列数*每个队列线程数&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;sf pro text&amp;#34; , &amp;#34;sf pro icons&amp;#34; , &amp;#34;aos icons&amp;#34; , &amp;#34;helvetica neue&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;microsoft yahei&amp;#34; , &amp;#34;arial&amp;#34; , sans-serif , &amp;#34;simsun&amp;#34; ; background-color: rgb(255 , 255 , 255)&quot;&gt;计算线程总数公式&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box ; font-family: &amp;#34;sf pro text&amp;#34; , &amp;#34;sf pro icons&amp;#34; , &amp;#34;aos icons&amp;#34; , &amp;#34;helvetica neue&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;microsoft yahei&amp;#34; , &amp;#34;arial&amp;#34; , sans-serif , &amp;#34;simsun&amp;#34; ; background-color: rgb(255 , 255 , 255)&quot;&gt;osd_op_num_shards_ssd*osd_op_num_threads_per_shard_ssd&lt;br&gt;SSD：一个OSD默认总线程数=8*2=&lt;code style=&quot;box-sizing: border-box ; word-break: break-word&quot;&gt;16&lt;br&gt;&lt;/code&gt;&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;font size=&quot;3&quot;&gt;HDD：一个OSD默认总线程数=5*1=5&lt;/font&gt;&lt;br&gt;&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="190" y="320" width="530" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
