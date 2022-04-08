@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-08T09:39:18.494Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" etag="T_1uvqDRon-4Uv2ukFrC" version="17.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-08T09:56:24.785Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" etag="PUIJlsBCPJcabvLzNWhu" version="17.4.1" type="github">
   <diagram id="ZcXVYhi8jEZApE4LMf-Q" name="Page-1">
     <mxGraphModel dx="2062" dy="1108" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -255,6 +255,99 @@
         </mxCell>
         <mxCell id="tmL5VtSiSNj98XbMmmCX-53" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;strokeColor=#FF0000;" vertex="1" parent="tmL5VtSiSNj98XbMmmCX-43">
           <mxGeometry x="45" y="185" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-56" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tmL5VtSiSNj98XbMmmCX-54" target="tmL5VtSiSNj98XbMmmCX-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tmL5VtSiSNj98XbMmmCX-54" target="tmL5VtSiSNj98XbMmmCX-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-54" value="开始" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="813" y="648" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-58" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tmL5VtSiSNj98XbMmmCX-55" target="tmL5VtSiSNj98XbMmmCX-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-55" value="服务端之间存储网故障？" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="799.5" y="741" width="147" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-60" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tmL5VtSiSNj98XbMmmCX-57" target="tmL5VtSiSNj98XbMmmCX-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-62" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tmL5VtSiSNj98XbMmmCX-57" target="tmL5VtSiSNj98XbMmmCX-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-57" value="故障节点自杀" style="whiteSpace=wrap;html=1;strokeColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="813" y="860" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tmL5VtSiSNj98XbMmmCX-59" target="tmL5VtSiSNj98XbMmmCX-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-59" value="客户端multipath切换" style="whiteSpace=wrap;html=1;strokeColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="998.5" y="862" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-64" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tmL5VtSiSNj98XbMmmCX-61" target="tmL5VtSiSNj98XbMmmCX-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-61" value="其它副本节点删除children" style="whiteSpace=wrap;html=1;strokeColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="813" y="960" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-66" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tmL5VtSiSNj98XbMmmCX-63" target="tmL5VtSiSNj98XbMmmCX-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tmL5VtSiSNj98XbMmmCX-63" target="tmL5VtSiSNj98XbMmmCX-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-63" value="调用调度算法重新选择主副本" style="whiteSpace=wrap;html=1;strokeColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="813" y="1060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-86" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tmL5VtSiSNj98XbMmmCX-65" target="tmL5VtSiSNj98XbMmmCX-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-65" value="节点之间rebuild维持3副本完整" style="whiteSpace=wrap;html=1;strokeColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="813" y="1160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tmL5VtSiSNj98XbMmmCX-67" target="tmL5VtSiSNj98XbMmmCX-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-78" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tmL5VtSiSNj98XbMmmCX-67" target="tmL5VtSiSNj98XbMmmCX-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-67" value="服务端磁盘故障？" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="741" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tmL5VtSiSNj98XbMmmCX-69" target="tmL5VtSiSNj98XbMmmCX-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-69" value="客户端multipath切换成功" style="whiteSpace=wrap;html=1;strokeColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="998.5" y="1060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tmL5VtSiSNj98XbMmmCX-71" target="tmL5VtSiSNj98XbMmmCX-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-71" value="等待新的主副本" style="whiteSpace=wrap;html=1;strokeColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="998.5" y="961" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tmL5VtSiSNj98XbMmmCX-74" target="tmL5VtSiSNj98XbMmmCX-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-74" value="同时坏2块以上盘？" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="850" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-82" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tmL5VtSiSNj98XbMmmCX-77" target="tmL5VtSiSNj98XbMmmCX-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-77" value="坏1块盘？" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="422.5" y="850" width="157.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-84" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="tmL5VtSiSNj98XbMmmCX-81" target="tmL5VtSiSNj98XbMmmCX-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-81" value="raid-5 rebuild维持数据完整性" style="whiteSpace=wrap;html=1;strokeColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="441.25" y="960" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tmL5VtSiSNj98XbMmmCX-85" value="结束" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="813" y="1260" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
