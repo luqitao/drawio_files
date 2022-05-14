@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-14T07:11:33.343Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="5AxVMzqXazQ2qrvbJdRc" version="18.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-14T07:16:15.414Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="2cZaBW5yNGB4tl7z18F5" version="18.0.2" type="github">
   <diagram id="Sv_K1uENLjbq1xUSF6ZQ" name="Page-1">
     <mxGraphModel dx="3716" dy="1114" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -493,55 +493,137 @@
         <mxCell id="lCX16vnIdNITKf82VVHz-30" value="path 3" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;" parent="1" source="lCX16vnIdNITKf82VVHz-24" target="lCX16vnIdNITKf82VVHz-29" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="a1uzJcFdWTJabidd8OP6-3" value="&lt;font style=&quot;font-size: 16px&quot;&gt;正常io路径：&lt;br&gt;1. 假设node-1为主副本，node-2和node-3为从副本&lt;br&gt;2. 客户端通过node-1对外nvmf uri写入，也就是主nexus对象对外暴露的地址nvmf://node-1:4421&lt;br&gt;3. 主nexus对象首先写入本地lvol，注意这里不会走本地内部复制nvmf地址nvmf://node-1:8420&lt;br&gt;4. 主nexus对象同时给2个从nvmf对象发送io写入请求，注意这里分别走从nvmf地址为nvmf://node-2:8420和nvmf://node-3:8420&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-77" y="906" width="457" height="180" as="geometry" />
+        <mxCell id="a1uzJcFdWTJabidd8OP6-20" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;dashed=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-581.04" y="2620" width="250" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="a1uzJcFdWTJabidd8OP6-4" value="&lt;font style=&quot;font-size: 16px&quot;&gt;主备切换后io路径：&lt;br&gt;1. 假设node-1故障了，这是卷状态为degrade，node-2升为主副本，node-3为从副本&lt;br&gt;2. 客户端通过node-2对外nvmf uri写入，也就是主nexus对象对外暴露的地址nvmf://node-2:4421&lt;br&gt;3. 主nexus对象首先写入本地lvol，注意这里不会走本地内部复制nvmf地址nvmf://node-2:8420&lt;br&gt;4. 主nexus对象同时给从nvmf对象发送io写入请求，注意这里走从nvmf地址为nvmf://node-3:8420&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-77" y="1096" width="457" height="180" as="geometry" />
+        <mxCell id="a1uzJcFdWTJabidd8OP6-21" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;dashed=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-728.04" y="2488" width="250" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="a1uzJcFdWTJabidd8OP6-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="a1uzJcFdWTJabidd8OP6-6" target="a1uzJcFdWTJabidd8OP6-11">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="a1uzJcFdWTJabidd8OP6-22" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;dashed=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-905.04" y="2620" width="250" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="a1uzJcFdWTJabidd8OP6-6" value="client" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="201" y="630" width="44" height="12" as="geometry" />
+        <mxCell id="a1uzJcFdWTJabidd8OP6-23" value="&lt;font style=&quot;font-size: 16px&quot;&gt;正常io路径：&lt;br&gt;1. 假设node-1为主副本，node-2和node-3为从副本&lt;br&gt;2. 客户端通过node-1对外nvmf uri写入，也就是主nexus对象对外暴露的地址nvmf://node-1:4421&lt;br&gt;3. 主nexus对象首先写入本地lvol，注意这里不会走本地内部复制nvmf地址nvmf://node-1:8420&lt;br&gt;4. 主nexus对象同时给2个从nvmf对象发送io写入请求，注意这里分别走从nvmf地址为nvmf://node-2:8420和nvmf://node-3:8420&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1013.04" y="2341" width="770" height="113" as="geometry" />
         </mxCell>
-        <mxCell id="a1uzJcFdWTJabidd8OP6-7" value="对外nvmf&lt;br&gt;nvmf://node-2:4421&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="1">
-          <mxGeometry x="-70" y="794" width="226" height="27" as="geometry" />
+        <mxCell id="a1uzJcFdWTJabidd8OP6-24" value="&lt;font style=&quot;font-size: 16px&quot;&gt;主备切换后io路径：&lt;br&gt;1. 假设node-1故障了，这是卷状态为degrade，node-2升为主副本，node-3为从副本&lt;br&gt;2. 客户端通过node-2对外nvmf uri写入，也就是主nexus对象对外暴露的地址nvmf://node-2:4421&lt;br&gt;3. 主nexus对象首先写入本地lvol，注意这里不会走本地内部复制nvmf地址nvmf://node-2:8420&lt;br&gt;4. 主nexus对象同时给从nvmf对象发送io写入请求，注意这里走从nvmf地址为nvmf://node-3:8420&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1010.04" y="2791" width="780" height="94" as="geometry" />
         </mxCell>
-        <mxCell id="a1uzJcFdWTJabidd8OP6-8" value="&lt;span&gt;内部复制nvmf&lt;/span&gt;&lt;br&gt;&lt;span&gt;nvmf://node-2:8420&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="1">
-          <mxGeometry x="-70" y="863" width="226" height="27" as="geometry" />
+        <mxCell id="a1uzJcFdWTJabidd8OP6-25" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;从图中可以得到几点：&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;1. 每个节点上每个逻辑卷都存在3个地址，包括对外nvmf，本地lvol和内部复制nvmf&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;2. 每个逻辑卷对应1个nexus对象，但是这个nexus对象是有多个副本，由于multipath我们选择的是主备模式，因此同一时刻只存在一个nexus对象对外可写&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;3. 对外nvmf写入数据的时候，必然会产生写放大，因为要保证多个副本同时完成写入，也就是强一致性&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;4. 内部复制nvmf写入数据的时候，效果和写入本地lvol一样，都是没有副本放大的&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;5. 由于本机直接读写磁盘比通过nvmf性能要高，因此在主副本节点上数据落盘是不会经过本机的内部复制nvmf地址&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1010.04" y="2941" width="730" height="152" as="geometry" />
         </mxCell>
-        <mxCell id="a1uzJcFdWTJabidd8OP6-9" value="本地lvol&lt;br&gt;bdev:///&amp;lt;lvol_name&amp;gt;?uuid=&amp;lt;lvol_uuid&amp;gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="1">
-          <mxGeometry x="-70" y="827" width="226" height="27" as="geometry" />
+        <mxCell id="a1uzJcFdWTJabidd8OP6-26" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-909.04" y="2050" width="614" height="311" as="geometry" />
         </mxCell>
-        <mxCell id="a1uzJcFdWTJabidd8OP6-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="a1uzJcFdWTJabidd8OP6-11">
+        <mxCell id="a1uzJcFdWTJabidd8OP6-27" value="client" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="a1uzJcFdWTJabidd8OP6-26">
+          <mxGeometry x="300" y="20" width="44" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-28" value="对外nvmf&lt;br&gt;nvmf://node-2:4421&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="a1uzJcFdWTJabidd8OP6-26">
+          <mxGeometry x="29" y="184" width="226" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-29" value="&lt;span&gt;内部复制nvmf&lt;/span&gt;&lt;br&gt;&lt;span&gt;nvmf://node-2:8420&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="a1uzJcFdWTJabidd8OP6-26">
+          <mxGeometry x="29" y="253" width="226" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-30" value="本地lvol&lt;br&gt;bdev:///&amp;lt;lvol_name&amp;gt;?uuid=&amp;lt;lvol_uuid&amp;gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="a1uzJcFdWTJabidd8OP6-26">
+          <mxGeometry x="29" y="217" width="226" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="a1uzJcFdWTJabidd8OP6-26" source="a1uzJcFdWTJabidd8OP6-32">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="223" y="696" as="targetPoint" />
+            <mxPoint x="322" y="86" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="a1uzJcFdWTJabidd8OP6-11" value="对外nvmf&lt;br&gt;nvmf://node-1:4421&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="1">
-          <mxGeometry x="110" y="656.5" width="226" height="27" as="geometry" />
+        <mxCell id="a1uzJcFdWTJabidd8OP6-32" value="对外nvmf&lt;br&gt;nvmf://node-1:4421&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="a1uzJcFdWTJabidd8OP6-26">
+          <mxGeometry x="209" y="46.5" width="226" height="27" as="geometry" />
         </mxCell>
-        <mxCell id="a1uzJcFdWTJabidd8OP6-12" value="&lt;span&gt;内部复制nvmf&lt;/span&gt;&lt;br&gt;&lt;span&gt;nvmf://node-1:8420&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="1">
-          <mxGeometry x="110" y="737" width="226" height="27" as="geometry" />
-        </mxCell>
-        <mxCell id="a1uzJcFdWTJabidd8OP6-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;entryX=0;entryY=0.5;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="a1uzJcFdWTJabidd8OP6-15" target="a1uzJcFdWTJabidd8OP6-8">
+        <mxCell id="a1uzJcFdWTJabidd8OP6-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;jettySize=auto;orthogonalLoop=1;" edge="1" parent="a1uzJcFdWTJabidd8OP6-26" source="a1uzJcFdWTJabidd8OP6-27" target="a1uzJcFdWTJabidd8OP6-32">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="a1uzJcFdWTJabidd8OP6-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=1;entryY=0.5;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="a1uzJcFdWTJabidd8OP6-15" target="a1uzJcFdWTJabidd8OP6-17">
+        <mxCell id="a1uzJcFdWTJabidd8OP6-34" value="&lt;span&gt;内部复制nvmf&lt;/span&gt;&lt;br&gt;&lt;span&gt;nvmf://node-1:8420&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="a1uzJcFdWTJabidd8OP6-26">
+          <mxGeometry x="209" y="127" width="226" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;entryX=0;entryY=0.5;jettySize=auto;orthogonalLoop=1;" edge="1" parent="a1uzJcFdWTJabidd8OP6-26" source="a1uzJcFdWTJabidd8OP6-32" target="a1uzJcFdWTJabidd8OP6-29">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="a1uzJcFdWTJabidd8OP6-15" value="本地lvol&lt;br&gt;bdev:///&amp;lt;lvol_name&amp;gt;?uuid=&amp;lt;lvol_uuid&amp;gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="1">
-          <mxGeometry x="110" y="696.5" width="226" height="27" as="geometry" />
+        <mxCell id="a1uzJcFdWTJabidd8OP6-36" value="本地lvol&lt;br&gt;bdev:///&amp;lt;lvol_name&amp;gt;?uuid=&amp;lt;lvol_uuid&amp;gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="a1uzJcFdWTJabidd8OP6-26">
+          <mxGeometry x="209" y="86.5" width="226" height="27" as="geometry" />
         </mxCell>
-        <mxCell id="a1uzJcFdWTJabidd8OP6-16" value="对外nvmf&lt;br&gt;nvmf://node-3:4421&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="1">
-          <mxGeometry x="260" y="793" width="226" height="27" as="geometry" />
+        <mxCell id="a1uzJcFdWTJabidd8OP6-37" value="对外nvmf&lt;br&gt;nvmf://node-3:4421&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="a1uzJcFdWTJabidd8OP6-26">
+          <mxGeometry x="359" y="183" width="226" height="27" as="geometry" />
         </mxCell>
-        <mxCell id="a1uzJcFdWTJabidd8OP6-17" value="&lt;span&gt;内部复制nvmf&lt;/span&gt;&lt;br&gt;&lt;span&gt;nvmf://node-3:8420&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="1">
-          <mxGeometry x="260" y="864" width="226" height="27" as="geometry" />
+        <mxCell id="a1uzJcFdWTJabidd8OP6-38" value="&lt;span&gt;内部复制nvmf&lt;/span&gt;&lt;br&gt;&lt;span&gt;nvmf://node-3:8420&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="a1uzJcFdWTJabidd8OP6-26">
+          <mxGeometry x="359" y="254" width="226" height="27" as="geometry" />
         </mxCell>
-        <mxCell id="a1uzJcFdWTJabidd8OP6-18" value="本地lvol&lt;br&gt;bdev:///&amp;lt;lvol_name&amp;gt;?uuid=&amp;lt;lvol_uuid&amp;gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="1">
-          <mxGeometry x="260" y="827" width="226" height="27" as="geometry" />
+        <mxCell id="a1uzJcFdWTJabidd8OP6-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=1;entryY=0.5;jettySize=auto;orthogonalLoop=1;" edge="1" parent="a1uzJcFdWTJabidd8OP6-26" source="a1uzJcFdWTJabidd8OP6-32" target="a1uzJcFdWTJabidd8OP6-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-40" value="本地lvol&lt;br&gt;bdev:///&amp;lt;lvol_name&amp;gt;?uuid=&amp;lt;lvol_uuid&amp;gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="a1uzJcFdWTJabidd8OP6-26">
+          <mxGeometry x="359" y="217" width="226" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-41" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;dashed=1;fillColor=none;" vertex="1" parent="a1uzJcFdWTJabidd8OP6-26">
+          <mxGeometry x="197" y="39" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-42" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;dashed=1;fillColor=none;" vertex="1" parent="a1uzJcFdWTJabidd8OP6-26">
+          <mxGeometry x="20" y="171" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-43" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;dashed=1;fillColor=none;" vertex="1" parent="a1uzJcFdWTJabidd8OP6-26">
+          <mxGeometry x="344" y="171" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="a1uzJcFdWTJabidd8OP6-45" target="a1uzJcFdWTJabidd8OP6-48">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-603.04" y="2481" />
+              <mxPoint x="-783.04" y="2481" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-45" value="client" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-625.04" y="2462" width="44" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="a1uzJcFdWTJabidd8OP6-48" target="a1uzJcFdWTJabidd8OP6-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="a1uzJcFdWTJabidd8OP6-48" target="a1uzJcFdWTJabidd8OP6-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-48" value="对外nvmf&lt;br&gt;nvmf://node-2:4421&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="-896.04" y="2626" width="226" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-49" value="&lt;span&gt;内部复制nvmf&lt;/span&gt;&lt;br&gt;&lt;span&gt;nvmf://node-2:8420&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="-896.04" y="2702" width="226" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-50" value="本地lvol&lt;br&gt;bdev:///&amp;lt;lvol_name&amp;gt;?uuid=&amp;lt;lvol_uuid&amp;gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="-896.04" y="2666" width="226" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;jettySize=auto;orthogonalLoop=1;dashed=1;" edge="1" parent="1" source="a1uzJcFdWTJabidd8OP6-52">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-603.04" y="2535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-52" value="对外nvmf&lt;br&gt;nvmf://node-1:4421&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="-716.04" y="2495.5" width="226" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-53" value="&lt;span&gt;内部复制nvmf&lt;/span&gt;&lt;br&gt;&lt;span&gt;nvmf://node-1:8420&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="-716.04" y="2576" width="226" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;entryX=0;entryY=0.5;jettySize=auto;orthogonalLoop=1;dashed=1;" edge="1" parent="1" source="a1uzJcFdWTJabidd8OP6-52" target="a1uzJcFdWTJabidd8OP6-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-55" value="本地lvol&lt;br&gt;bdev:///&amp;lt;lvol_name&amp;gt;?uuid=&amp;lt;lvol_uuid&amp;gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="-716.04" y="2535.5" width="226" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-56" value="对外nvmf&lt;br&gt;nvmf://node-3:4421&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="-566.04" y="2632" width="226" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-57" value="&lt;span&gt;内部复制nvmf&lt;/span&gt;&lt;br&gt;&lt;span&gt;nvmf://node-3:8420&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="-566.04" y="2703" width="226" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=1;entryY=0.5;jettySize=auto;orthogonalLoop=1;dashed=1;" edge="1" parent="1" source="a1uzJcFdWTJabidd8OP6-52" target="a1uzJcFdWTJabidd8OP6-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-59" value="本地lvol&lt;br&gt;bdev:///&amp;lt;lvol_name&amp;gt;?uuid=&amp;lt;lvol_uuid&amp;gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="-566.04" y="2666" width="226" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="a1uzJcFdWTJabidd8OP6-60" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;fillColor=none;align=left;strokeColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="-665.04" y="2515" width="120" height="66" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
