@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-21T02:47:28.505Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" version="20.6.0" etag="e-TN2wMNfd5_iB2AgMAm" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-21T02:49:24.443Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" version="20.6.0" etag="y-MAQqZ7-gmmfKKLrnCX" type="github">
   <diagram id="EwqAiMexF-4UJ-KyfhAE" name="第 1 页">
     <mxGraphModel dx="2062" dy="1146" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
@@ -8,7 +8,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--2" value="GRUB2&lt;br&gt;引导程序" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="200" width="70" height="40" as="geometry" />
+          <mxGeometry x="110" y="183" width="70" height="40" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--3" style="html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="696KmnlqjqmfP4ftW0Q--4" target="696KmnlqjqmfP4ftW0Q--6">
           <mxGeometry relative="1" as="geometry">
@@ -16,7 +16,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--4" value="ISOLINUX&lt;br&gt;引导程序" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="210" y="200" width="80" height="40" as="geometry" />
+          <mxGeometry x="220" y="185" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--5" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="696KmnlqjqmfP4ftW0Q--6" target="696KmnlqjqmfP4ftW0Q--8">
           <mxGeometry relative="1" as="geometry" />
@@ -28,13 +28,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--8" value="操作系统和软件包安装" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="130" y="320" width="140" height="30" as="geometry" />
+          <mxGeometry x="130" y="327" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--9" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="696KmnlqjqmfP4ftW0Q--10" target="696KmnlqjqmfP4ftW0Q--13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--10" value="节点初始化配置(TUI)&lt;br&gt;启动auto-register服务" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="130" y="375" width="140" height="40" as="geometry" />
+          <mxGeometry x="130" y="390" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--11" value="节点灌装" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="165" y="130" width="70" height="30" as="geometry" />
@@ -43,19 +43,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--13" value="清理节点环境&lt;br&gt;配置管理网" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="375" width="100" height="40" as="geometry" />
+          <mxGeometry x="370" y="390" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--14" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="696KmnlqjqmfP4ftW0Q--15" target="696KmnlqjqmfP4ftW0Q--17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--15" value="创建云管容器" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="319" width="100" height="30" as="geometry" />
+          <mxGeometry x="370" y="324" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--16" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="696KmnlqjqmfP4ftW0Q--17" target="696KmnlqjqmfP4ftW0Q--19">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--17" value="注册节点" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="385" y="263" width="70" height="30" as="geometry" />
+          <mxGeometry x="385" y="268" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--18" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="696KmnlqjqmfP4ftW0Q--19" target="696KmnlqjqmfP4ftW0Q--22">
           <mxGeometry relative="1" as="geometry" />
@@ -70,28 +70,28 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--22" value="启动awbob服务" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="595" y="200" width="110" height="30" as="geometry" />
+          <mxGeometry x="600" y="200" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--23" value="节点部署" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="645" y="130" width="70" height="30" as="geometry" />
+          <mxGeometry x="620" y="130" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--24" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="696KmnlqjqmfP4ftW0Q--25" target="696KmnlqjqmfP4ftW0Q--27">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--25" value="选举bob-leader&lt;br&gt;与云管建立websocket连接" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="258" width="160" height="40" as="geometry" />
+          <mxGeometry x="574" y="258" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--26" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="696KmnlqjqmfP4ftW0Q--27" target="696KmnlqjqmfP4ftW0Q--29">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--27" value="查询consul配置中&lt;br&gt;集群状态" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="590" y="325" width="120" height="40" as="geometry" />
+          <mxGeometry x="594" y="325" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--28" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="696KmnlqjqmfP4ftW0Q--29" target="696KmnlqjqmfP4ftW0Q--32">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="696KmnlqjqmfP4ftW0Q--29" value="自执行安装部署任务" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="585" y="400" width="130" height="30" as="geometry" />
+        <mxCell id="696KmnlqjqmfP4ftW0Q--29" value="执行安装部署任务" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="588" y="400" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--30" value="" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="696KmnlqjqmfP4ftW0Q--32" target="696KmnlqjqmfP4ftW0Q--33">
           <mxGeometry relative="1" as="geometry" />
@@ -103,16 +103,16 @@
           <mxGeometry x="845" y="400" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--33" value="启动服务容器&lt;br&gt;OpenStack、SaaS等" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="740" y="285" width="140" height="40" as="geometry" />
+          <mxGeometry x="747.5" y="279" width="142.5" height="41" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--34" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="696KmnlqjqmfP4ftW0Q--35" target="696KmnlqjqmfP4ftW0Q--36">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--35" value="获取job作业结果" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="905" y="290" width="110" height="30" as="geometry" />
+          <mxGeometry x="907.5" y="279" width="125" height="41" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--36" value="云管" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="875" y="155" width="50" height="30" as="geometry" />
+          <mxGeometry x="887.5" y="155" width="145" height="55" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--37" value="" style="endArrow=none;html=1;entryX=0.008;entryY=0.425;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="696KmnlqjqmfP4ftW0Q--22" target="696KmnlqjqmfP4ftW0Q--36">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -121,7 +121,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--38" value="Websocket" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="720" y="160" width="80" height="30" as="geometry" />
+          <mxGeometry x="740" y="160" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="696KmnlqjqmfP4ftW0Q--39" value="返回安装部署结果" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="910" y="223" width="120" height="30" as="geometry" />
